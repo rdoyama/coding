@@ -1,5 +1,4 @@
 /* Week 3 Assignment - Honors
-
 Doubly Linked List with elements ranging
 from 0 to 49 will be sorted with MergeSort
 to remove duplicates */
@@ -124,7 +123,10 @@ void delete_right(DLLNode *node)
         return;
     // Node before tail
     else if (node -> right -> right == NULL)
+    {
+        temp = node -> right;
         node -> right = NULL;
+    }
     else
     {
         temp = node -> right;
