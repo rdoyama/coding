@@ -12,7 +12,7 @@
 // the values to "array"
 void read_file(FILE *ptr, int **array, int size)
 {
-    int i = 0, x;
+    int i = 0;
     for (i; i < size; i++)
     {
         fscanf(ptr, "%d", (*array + i));
